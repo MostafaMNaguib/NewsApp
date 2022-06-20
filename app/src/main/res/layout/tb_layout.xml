@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_40sdp"
+    android:elevation="@dimen/_4sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_v"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".5"
+        />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="@id/guideline_v"
+        android:background="@color/gray"
+        />
+
+    <TextView
+        android:id="@+id/viewArticlesBtn"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/view"
+        android:gravity="center"
+        android:text="@string/articles"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14ssp"
+        />
+
+    <TextView
+        android:id="@+id/viewFavoritesBtn"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="@id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:text="@string/Favorites"
+        android:textSize="@dimen/_14ssp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
